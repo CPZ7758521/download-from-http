@@ -1,5 +1,8 @@
 package com.pandora.www;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -8,7 +11,11 @@ import java.net.URL;
  * 从网络Url中下载文件
  */
 public class Download_from_http {
+
+    private static final Logger LOG = LoggerFactory.getLogger(Download_from_http.class);
+
     public static void downloadFromUrl(String urlStr, String fileName, String savePath) throws IOException {
+
         URL url = new URL(urlStr);
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
@@ -40,6 +47,9 @@ public class Download_from_http {
         if (inputStream != null) {
             inputStream.close();
         }
+
+        LOG.info(url + "download success!");
+
     }
 
     public static byte[] readInputStream(InputStream inputStream) throws IOException {
