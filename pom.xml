@@ -28,18 +28,18 @@
             <version>1.7.32</version> <!-- 使用最新版本 -->
         </dependency>
 
-        <!-- LOG4J 2.x to SLF4J Bridge -->
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-to-slf4j</artifactId>
-            <version>2.14.0</version> <!-- 使用适当的版本 -->
-        </dependency>
-
         <!-- LOG4J 2.x Core (for actual logging, required at runtime) -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
             <version>2.14.0</version> <!-- 使用适当的版本 -->
+        </dependency>
+
+        <!-- Log4j SLF4J Binding -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
+            <version>2.14.1</version>
         </dependency>
 
     </dependencies>
