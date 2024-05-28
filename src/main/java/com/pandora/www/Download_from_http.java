@@ -12,7 +12,7 @@ import java.net.URL;
  */
 public class Download_from_http {
 
-    private static final Logger LOG = LoggerFactory.getLogger(Download_from_http.class);
+    private static Logger LOG = LoggerFactory.getLogger(Download_from_http.class);
 
     public static void downloadFromUrl(String urlStr, String fileName, String savePath) throws IOException {
 

@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 
 public class DownloadApplication {
-    private static final Logger LOG = LoggerFactory.getLogger(DownloadApplication.class);
+    private static Logger LOG = LoggerFactory.getLogger(DownloadApplication.class);
     public static void main(String[] args) throws IOException {
 
         String url = "http://142.171.173.150:7759/#/";
